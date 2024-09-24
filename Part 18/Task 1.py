@@ -1,0 +1,24 @@
+from random import randint
+
+
+word = "" 
+
+
+word = word + input("First word: ")
+word = word + input("Second word: ")
+word = word + input("Third word: ")
+new_word = "" 
+for letter in word: 
+    if letter == "a": 
+        new_word = new_word + chr(randint(33, 37))
+    elif letter == "e":
+        new_word = new_word + chr(randint(38, 42))
+    elif letter == "i":
+        new_word = new_word + chr(randint(43, 47))
+    elif letter == "o":
+        new_word = new_word + chr(randint(58, 61))
+    elif letter == "u":
+        new_word = new_word + chr(randint(91, 94))
+    else: 
+        new_word = new_word + letter 
+print(new_word)  
