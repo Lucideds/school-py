@@ -9,7 +9,6 @@ word = word + input("Third word: ")
 new_word = ""
 
 for letter in word: 
-    print(letter)
     if letter == "a": 
         new_word = new_word + chr(random.randint(33, 37))
     elif letter == "e":
@@ -22,5 +21,4 @@ for letter in word:
         new_word = new_word + chr(random.randint(91, 94))
     else: 
         new_word = new_word + letter 
-    print(new_word)
 print(new_word)  
